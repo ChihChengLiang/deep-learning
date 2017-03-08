@@ -3,6 +3,8 @@ services:
   dlnd:
     image: udacity/dlnd:latest
     build: ./
+    volumes:
+      - "./:/notebooks"
     ports:
       - "8888:8888"
       - "6006:6006"
